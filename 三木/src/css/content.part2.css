@@ -1,0 +1,121 @@
+.content-part2 {
+  /* border: 2px solid red; */
+  /* height: 600px;
+  width: 100; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background-color: rgb(245, 241, 241);
+}
+
+.content-part2-bottom {
+  /* height: 650px; */
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.content-part2-bottom > div:first-child {
+  /* height: 500px; */
+
+  /* border: 2px solid rgb(28, 18, 233); */
+}
+.content-part2-bottom > div:last-child {
+  /* height: 500px; */
+  width: 70%;
+  /* border: 2px solid rgb(30, 27, 212); */
+}
+.content-part2-bottom {
+}
+.content-part2-bottom > div:first-child {
+  height: 560px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(113, 168, 215);
+  border-radius: 16px;
+  position: relative;
+}
+.content-part2-bottom > div:first-child > img {
+  width: 140%;
+  order: 1;
+}
+.content-part2-bottom > div:first-child > span:first-of-type {
+  /* padding: 20px; */
+  height: 60px;
+  width: 60px;
+  background-color: rgba(239, 166, 9, 0.973);
+  color: rgb(4, 0, 7);
+  font-weight: 900;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.content-part2-bottom > div:first-child > span:last-of-type {
+  font-size: 2rem;
+  color: white;
+  white-space: pre-line;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* 右边文字 */
+.part2-card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 40px;
+  width: 100%;
+}
+.part2-card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.part2-card-item > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.part2-card-item > :first-child > :nth-child(1) {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: rgb(0, 24, 3);
+}
+.part2-card-item > :first-child > :nth-child(2) {
+  font-size: 1.8rem;
+  white-space: pre-line;
+  font-weight: 500;
+}
+.part2-card-item > :first-child > :nth-child(3) {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+.part2-card-item > div:last-child {
+  border-top: 1px solid gray;
+}
+.part2-card-item > div:last-child > div {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}

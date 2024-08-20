@@ -1,0 +1,161 @@
+.nav-part{
+    border: none;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 40px; */
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding-block: 20px;
+    z-index: 1000;
+    position: relative;
+  }
+  .nav-part-left{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  .nav-part-right{
+    display: flex;
+    gap: 20px;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .nav-part-left > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav-part-left > div:first-child > img{
+    width: 30px;
+  }
+  .nav-part-left > div:first-child > span{
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  .nav-part-left > div:first-child > span > span{
+    font-weight: 500;
+  }
+  
+  /* 导航栏的几个选项 */
+  .nav-part-left > div:last-child{
+    display: flex;
+    gap: 30px;
+    font-size: 0.9rem;
+  }
+  /* 
+  .nav-part-right > div:first-child{
+   
+  } */
+  
+  .nav-part-right > div:last-child{
+    color: white;
+    background-color: black;
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
+  
+  
+  /* 交互处理 */
+  div.nav-items-container.nav-items-container{
+    gap: 0px;
+  }
+  
+  div.nav-items-container.nav-items-container > span{
+    /* border: 1px solid red; */
+    width:90px;
+    display: flex;
+  
+    
+  }
+  
+  div.nav-items-container.nav-items-container > span:first-child{
+    margin-right: 20px;
+  }
+  
+  .nav-items-container > span{
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+  }
+  
+  
+  .nav-items-container > span > span:hover{
+    color: black;
+    font-weight: 700;
+  }
+  
+  .nav-items-container > span > span {
+    position: relative;
+    z-index: 0;
+    /* border: 3px solid green; */
+  }
+  
+  .nav-items-container > span > span > div{
+    padding-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: white; */
+    /* border: 3px solid red; */
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    /* transform: translateY(0px); */;
+  }
+  
+  .nav-items-container > span > span:hover > div{
+    opacity: 1;
+    pointer-events: auto;
+  
+  }
+  
+  .sub-nav-card{
+    width: 250px;
+    /* height: 200px; */
+    /* border: 2px solid blue; */
+    transition:  transform 0.3s ease;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 300;
+  }
+  
+  .nav-items-container > span > span:hover > div > div{
+    transform: translateY(10px);
+  }
+  
+  .sub-nav-card-item{
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid red; */
+  }
+  
+  .sub-nav-card-item > div:first-child{
+    height: 18px;
+    width: 18px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 2px;
+  }
+  
+  .sub-nav-card-item > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .sub-nav-card-item > div:last-child > span:first-child{
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .sub-nav-card-item > div:last-child > span:last-child{
+    text-transform: capitalize;
+    color: rgb(172, 172, 172);
+    text-wrap: nowrap;
+  }

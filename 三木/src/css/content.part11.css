@@ -1,0 +1,97 @@
+.content-part11 {
+  width: 100%;
+  height: 1200px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgb(246, 243, 243);
+}
+
+.content-part11-main > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.content-part11-main > div:first-child::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 4px,
+    rgb(37, 37, 37) 4px,
+    rgb(37, 37, 37) 8px
+  );
+  bottom: 0;
+}
+
+.main-list-box {
+  display: flex;
+  flex-direction: column;
+}
+.main-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+}
+.main-list-item::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 4px,
+    rgb(37, 37, 37) 4px,
+    rgb(37, 37, 37) 8px
+  );
+  bottom: 0;
+}
+
+.main-list-item > div:first {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.main-list-item > div:first > span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.main-list-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main-list-item-text > span:first-child {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.main-list-item-text > span:last-child {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: rgb(95, 95, 95);
+}
+.main-list-item > :last-child {
+  border: 1px solid gray;
+  padding: 10px 12px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}

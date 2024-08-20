@@ -1,0 +1,43 @@
+:root {
+  --main-block-padding: 100px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  /* height: 180%; */
+  border: 2px solid red;
+  max-width: 1280px;
+}
+.part {
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid green; */
+  padding: 0px var(--main-block-padding);
+}
+.footer {
+  height: 100vh;
+  width: 100px;
+}
+
+.part-title {
+  /* height: 100px; */
+  width: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+}
+.part-title > span:first-child {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: rgb(82, 81, 79);
+}
+.part-title > span:last-child {
+  font-size: 2.8rem;
+  /* text-transform: capitalize; */
+  white-space: pre-line;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,223 @@
+.content-part10 {
+  width: 100%;
+  height: 1000px;
+  /* border: 2px solid red; */
+  padding-block: var(--main-block-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(251, 251, 253);
+}
+.content-part10 > div {
+  /* border: 2px solid blue; */
+}
+.content-part10-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.content-part10-top > span:first-child(1) {
+  font-size: 1.1rem;
+}
+.content-part10-top > span:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.coupon-box {
+  display: flex;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.coupon-box > input {
+  width: 400px;
+  height: 46px;
+  outline: none;
+  padding-left: 0.8rem;
+}
+
+.coupon-box > input::placeholder {
+  color: black;
+  text-indent: 0.5rem;
+}
+.coupon-box > button {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  font-size: 0.6rem;
+}
+
+.content-part10-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.content-part10-bottom-titles {
+  display: flex;
+  align-items: center;
+}
+.toggle-price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+#toggle-price {
+  display: none;
+}
+.toggle-price-box > label {
+  width: 75px;
+  height: 36px;
+  background-color: rgb(235, 231, 231);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  flex-shrink: 0;
+}
+.toggle-price-box > label::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+#toggle-price:checked + .content-part10-bottom-titles label::after {
+  transform: translateX(36px);
+}
+.toggle-price-box > span:last-child {
+  font-size: 0.6rem;
+  text-wrap: nowrap;
+  border-radius: 4px;
+  background: linear-gradient(red, orange, yellow, green, blue);
+}
+.part10-card-price-info-second > span:last-child {
+  font-size: 0.6rem;
+  text-wrap: nowrap;
+  border-radius: 4px;
+  background: linear-gradient(
+    rgb(196, 132, 216),
+    rgb(219, 198, 216),
+    rgb(109, 109, 206)
+  );
+}
+.part10-card-price-info-third > span:last-child {
+  color: rgba(255, 255, 255, 0.784);
+  font-size: 0.6rem;
+  text-wrap: nowrap;
+  border-radius: 4px;
+  background: black;
+}
+.content-part10-bottom-cards {
+  display: flex;
+  gap: 20px;
+}
+.content-part10-bottom-cards > div {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: auto;
+}
+.part10-card {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+.part10-card-second {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  gap: 30px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.51);
+}
+.part10-card-tittle-second {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.part10-card-price-title-second > span:first-child {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.part10-card-tittle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.part10-card-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.part10-card-price-title > span:first-child {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.part10-card-price-info {
+  font-size: 0.9rem;
+}
+
+.part10-card-button {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(244, 237, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.part10-card-button-second {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(238, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.part10-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.part10-card-list-item {
+  display: flex;
+  gap: 20px;
+  font-size: 0.8rem;
+  align-items: center;
+  font-weight: 600;
+}
+.part10-card-list-item > div:first-child {
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+  border: 1px solid rgb(235, 231, 231);
+  border-radius: 50%;
+}
+.year-price {
+  display: none;
+}
+#toggle-price:checked ~ .content-part10-bottom-cards .monthly-price {
+  display: none;
+}
+#toggle-price:checked ~ .content-part10-bottom-cards .year-price {
+  display: inline-block;
+}
