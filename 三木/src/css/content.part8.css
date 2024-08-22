@@ -1,6 +1,8 @@
-.content-part8 {
+
+
+.content-part8{
   width: 100%;
-  height: 1400px;
+  height: auto;
   /* border: 2px solid red; */
   padding-block: var(--main-block-padding);
   display: flex;
@@ -8,7 +10,7 @@
   gap: 80px;
 }
 
-.content-part8-main {
+.content-part8-main{
   background-color: black;
   color: white;
   padding: 60px 100px;
@@ -19,15 +21,16 @@
   gap: 60px;
 }
 
-.part8-grid {
+.part8-grid{
   /* border: 2px solid green; */
   flex-grow: 1;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr repeat(5, 1fr);
+  grid-template-rows:0.4fr repeat(5,1fr);
 }
 
-.part8-grid-item {
+/* 每一行元素的设置 */
+.part8-grid-item{
   grid-row: 1/2;
   grid-column: span 6;
   /* background-color: rgb(77, 14, 104); */
@@ -41,8 +44,9 @@
   color: rgb(143, 143, 143);
   text-transform: capitalize;
   font-weight: 500;
+
 }
-.part8-grid-item::after {
+.part8-grid-item::after{
   content: "";
   width: 100%;
   height: 1px;
@@ -51,103 +55,122 @@
   background: repeating-linear-gradient(
     to right,
     transparent,
-    transparent 4px,
-    /* 虚线间隔的开始 */ rgb(37, 37, 37) 4px,
+    transparent 4px, /* 虚线间隔的开始 */
+    rgb(37, 37, 37) 4px, 
     rgb(37, 37, 37) 8px /* 虚线间隔的结束 */
   );
   bottom: 0;
 }
 
-.line-2 {
+.line-2{
   grid-row: 2/3;
 }
-.line-3 {
+.line-3{
   grid-row: 3/4;
 }
-.line-4 {
+.line-4{
   grid-row: 4/5;
 }
-.line-5 {
+.line-5{
   grid-row: 5/6;
 }
-.line-6 {
+.line-6{
   grid-row: 6/7;
 }
 
-.name-item {
+
+
+
+
+.name-item{
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-block: 40px;
 }
 
-.name-item > div:first-child {
-  width: 80px;
-  height: 50px;
+/* name 列的图片 */
+.name-item > div:first-child{
+  width: 64px;
+  height: 38px;
   /* border: 2px solid red; */
-  border-radius: 6px;
+  border-radius: 4px;
   overflow: hidden;
   font-size: 0;
 }
-.name-item > div:first-child > img {
+.name-item > div:first-child > img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.name-item > div:last-child {
+.name-item > div:last-child{
   display: flex;
   flex-direction: column;
   color: white;
 }
 
-.name-item-text > span:first-child {
+.name-item-text > span:first-child{
   font-size: 1rem;
+  
 }
 .name-item-text > span:last-child {
   font-size: 0.6rem;
   color: rgb(70, 70, 70);
 }
-.name-item-text > span:last-child > span {
+.name-item-text > span:last-child > span{
   color: rgb(158, 159, 161);
 }
 
-.total-item {
+/* total列中的内容整体设置 */
+.total-item{
   display: flex;
   flex-direction: column;
-  padding: 16px 30px;
+  padding: 12px 24px;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(71, 71, 71);
+  border: 1px solid rgb(46, 46, 46);
   /* width: fit-content; */
   justify-self: self-end;
   border-radius: 12px;
 }
-.total-item > span:first-child {
-  font-size: 1.7rem;
+/* total列的内容中的4设置 */
+.total-item > span:first-child{
+  font-size: 1.3rem;
   font-weight: 700;
   color: white;
+
 }
 
-.total-item > span:last-child {
+.total-item > span:last-child{
   color: rgb(88, 88, 88);
+  font-size: 0.8rem;
 }
 
-.part8-grid-item > :nth-child(2) {
+/* 中间三列文字 */
+.part8-grid-item > :nth-child(2){
   font-weight: 200;
   justify-self: center;
+  font-size: 0.9rem;
 }
-.part8-grid-item > :nth-child(3) {
+.part8-grid-item > :nth-child(3){
   font-weight: 200;
   justify-self: center;
+  font-size: 0.9rem;
 }
-.part8-grid-item > :nth-child(4) {
+.part8-grid-item > :nth-child(4){
   font-weight: 200;
   justify-self: center;
+  font-size: 0.9rem;
 }
 
+/* 标题行的文字特别处理 */
 .part8-grid-item.line-title > div {
   font-weight: 700;
+  font-size: 0.8rem;
+  padding-bottom: 20px;
 }
-.part8-grid-item.line-title > div:last-child {
+.part8-grid-item.line-title > div:last-child{
   justify-self: end;
 }
+

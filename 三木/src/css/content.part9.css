@@ -1,4 +1,4 @@
-.content-part9 {
+.content-part9{
   width: 100%;
   height: auto;
   /* border: 2px solid red; */
@@ -7,92 +7,106 @@
   padding-block: var(--main-block-padding);
   gap: 120px;
 }
-.content-part9-top {
+.content-part9-top{
   display: flex;
   justify-content: space-between;
   gap: 100px;
 }
-.content-part9-top > div {
+.content-part9-top>div{
   width: 100%;
   /* height: 800px; */
   /* border: 2px solid green; */
 }
-.content-part9-top-left {
+.content-part9-top-left{
   display: flex;
   flex-direction: column;
 }
-.content-part9-top-left-tittle {
+
+.content-part9-top-left-title{
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
-.content-part9-top-left-tittle > span:first-child {
-  font-size: 4.5rem;
-  font-weight: bold;
+
+.content-part9-top-left-title > span{
+  font-size: 5.5rem;
+  
   text-transform: capitalize;
   white-space: pre-line;
 }
-.content-part9-top-left-tittle > span:last-child {
-  font-size: 4rem;
+
+.content-part9-top-left-title> span:first-child{
+  font-weight: bold;
+}
+.content-part9-top-left-title> span:last-child{
   font-weight: thin;
-  text-transform: capitalize;
-  white-space: pre-line;
 }
 .content-part9-top-left-info {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 }
-.content-part9-top-left-info > div:first-child {
+
+.content-part9-top-left-info > div:first-child{
   height: 40px;
   width: 40px;
   background-color: blue;
   border-radius: 50%;
-  background-image: url("../imgs/part9/avatar1.png");
+  background: url('../imgs/part9/avatar1.png');
   background-size: cover;
   filter: grayscale(100%);
+
 }
-.content-part9-top-left-info > div:last-child {
+
+
+.content-part9-top-left-info > div:last-child{
   display: flex;
-  gap: 20px;
+  gap: 10px;
   font-size: 0.8rem;
 }
-.content-part9-top-left-info > div:last-child > span:first-child {
+
+.content-part9-top-left-info > div:last-child > span:first-child{
   font-weight: 800;
   text-transform: capitalize;
 }
-.content-part9-top-left-text {
+
+.content-part9-top-left-text{
   font-size: 2rem;
   white-space: pre-line;
-  margin-top: 20px;
 }
-/* 右边图片 */
+
+
+/* 右边图片结构 */
+
 .content-part9-top-right {
   position: relative;
   font-size: 4rem;
   right: 100px;
 }
-.content-part9-top-right > img {
-  width: 500px;
+.content-part9-top-right > img{
+  width: 450px;
   height: 600px;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
-.content-part9-top-right > span {
+.content-part9-top-right > span{
   position: absolute;
 }
-.content-part9-top-right > span:first-of-type {
+.content-part9-top-right > span:first-of-type{
   right: 0;
   top: -50px;
   height: 110px;
   width: 110px;
-  background-color: rgb(220, 133, 26);
+  background-color: rgb(233, 102, 66);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 30px;
+  
 }
-.content-part9-top-right > span:last-of-type {
+.content-part9-top-right > span:last-of-type{
   left: 30px;
   bottom: 0;
   font-size: 16rem;
@@ -101,17 +115,17 @@
 }
 
 /* 下面部分 */
-.content-part9-bottom {
+.content-part9-bottom{
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 }
-.content-part9-bottom > div {
+.content-part9-bottom > div{
   width: 100%;
   /* border: 2px solid red; */
 }
 
-.content-part9-bottom-item {
+.content-part9-bottom-item{
   position: relative;
   height: 500px;
   border-radius: 12px;
@@ -121,65 +135,82 @@
   justify-content: space-between;
   color: white;
   z-index: 0;
-  /* padding: 40px;
-  padding-top: 100px; */
+  padding: 40px;
+  padding-top: 100px;
 }
-.bottom-bg-item {
+
+.bottom-bg-item{
   position: absolute;
   z-index: -1;
+  top: 0;
+  left: 0;
 }
-img.bottom-bg-item {
+
+img.bottom-bg-item{
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: right;
   filter: grayscale(100%);
+
 }
-div.bottom-bg-item {
+div.bottom-bg-item{
   width: 100%;
   height: 100%;
   background-color: black;
   opacity: 0.8;
 }
-.content-part9-bottom-item-top {
+
+.content-part9-bottom-item-top{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.content-part9-bottom-item-top > :first-child {
+.content-part9-bottom-item-top > :first-child{
   font-size: 0.8rem;
-  color: rgb(156, 156, 147);
-  margin-top: 100px;
+  color: rgb(159, 159, 159);
 }
-.content-part9-bottom-item-top > :last-child {
+.content-part9-bottom-item-top > :last-child{
   font-size: 2rem;
   white-space: pre-line;
   line-height: 1.4;
   letter-spacing: 1px;
 }
-.content-part9-bottom-item-bottom {
+
+.content-part9-bottom-item-bottom{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.content-part9-bottom-item-bottom > :first-child {
+
+.content-part9-bottom-item-bottom > :first-child{
   width: 50px;
   height: 50px;
   background-color: blue;
   border-radius: 50%;
-  background-image: url("../imgs/part9/avatar1.png");
+  background: url('../imgs/part9/avatar1.png');
   background-size: cover;
   filter: grayscale(100%);
 }
-.content-part9-bottom-item-bottom.right-card > :first-child {
-  background-image: url("../imgs/part9/avatar2.png");
+
+.content-part9-bottom-item-bottom.right-card > :first-child{
+  background-image: url('../imgs/part9/avatar2.png');
+
 }
-.content-part9-bottom-item-bottom > :last-child {
+
+.content-part9-bottom-item-bottom > :last-child{
   display: flex;
   gap: 10px;
   font-size: 0.8rem;
   font-weight: 800;
 }
-.content-part9-bottom-item-bottom > :last-child > span {
+
+.content-part9-bottom-item-bottom > :last-child > span{
   font-weight: 400;
+}
+
+/* 交互 */
+.content-part9-top:hover .content-part9-top-right> img{
+  width: 600px;
+  /* height: 670px; */
 }

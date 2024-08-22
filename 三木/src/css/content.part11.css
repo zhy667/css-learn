@@ -1,14 +1,18 @@
-.content-part11 {
+.content-part11{
   width: 100%;
-  height: 1200px;
-  border: 2px solid red;
+  height: auto;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: rgb(246, 243, 243);
+  background-color: rgb(248, 248, 248);
+  padding-block: var(--main-block-padding);
 }
 
-.content-part11-main > div:first-child {
+.content-part11-main{
+  /* border: 2px solid green; */
+}
+.content-part11-main > div:first-child{
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -16,7 +20,8 @@
   text-transform: capitalize;
   font-size: 0.8rem;
 }
-.content-part11-main > div:first-child::after {
+
+.content-part11-main > div:first-child::after{
   content: "";
   width: 100%;
   height: 1px;
@@ -25,25 +30,27 @@
   background: repeating-linear-gradient(
     to right,
     transparent,
-    transparent 4px,
-    rgb(37, 37, 37) 4px,
-    rgb(37, 37, 37) 8px
+    transparent 4px, /* 虚线间隔的开始 */
+    rgb(191, 191, 191) 4px, 
+    rgb(191, 191, 191) 8px /* 虚线间隔的结束 */
   );
   bottom: 0;
 }
 
-.main-list-box {
+.main-list-box{
   display: flex;
   flex-direction: column;
 }
-.main-list-item {
+
+.main-list-item{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 36px 0;
   position: relative;
 }
-.main-list-item::after {
+
+.main-list-item::after{
   content: "";
   width: 100%;
   height: 1px;
@@ -52,19 +59,19 @@
   background: repeating-linear-gradient(
     to right,
     transparent,
-    transparent 4px,
-    rgb(37, 37, 37) 4px,
-    rgb(37, 37, 37) 8px
+    transparent 4px, /* 虚线间隔的开始 */
+    rgb(191, 191, 191) 4px, 
+    rgb(191, 191, 191) 8px /* 虚线间隔的结束 */
   );
   bottom: 0;
 }
 
-.main-list-item > div:first {
+.main-list-item > div:first-child{
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.main-list-item > div:first > span {
+.main-list-item > div:first-child > span{
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -75,22 +82,27 @@
   font-size: 0.8rem;
   font-weight: 700;
 }
-.main-list-item-text {
+
+.main-list-item-text{
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.main-list-item-text > span:first-child {
-  font-weight: 700;
+
+.main-list-item-text > span:first-child{
+  font-weight:700 ;
   text-transform: capitalize;
 }
-.main-list-item-text > span:last-child {
+
+.main-list-item-text > span:last-child{
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: rgb(95, 95, 95);
 }
-.main-list-item > :last-child {
-  border: 1px solid gray;
+
+
+.main-list-item > :last-child{
+  border: 2px solid rgb(138, 138, 138);
   padding: 10px 12px;
   font-size: 0.7rem;
   border-radius: 4px;

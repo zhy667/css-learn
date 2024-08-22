@@ -1,11 +1,12 @@
-.content-part12 {
+.content-part12{
   width: 100%;
   height: 800px;
   /* border: 2px solid red; */
   position: relative;
+
 }
 
-.content-part12 > span {
+.content-part12 > span{
   position: absolute;
   top: 100px;
   left: 100px;
@@ -13,13 +14,13 @@
   font-weight: 500;
   white-space: pre-line;
 }
-.content-part12-main {
+.content-part12-main{
   width: 100%;
   height: 100%;
   /* border: 4px solid green; */
   display: flex;
 }
-.content-part12-main > div {
+.content-part12-main > div{
   height: 100%;
   width: 100%;
   /* border: 2px solid red; */
@@ -28,28 +29,61 @@
   align-items: flex-end;
 }
 
-.content-part12-main > div:last-child {
+.content-part12-main > div:last-child{
   border-right: none;
 }
 
-.content-part12-main > div > img {
+
+.content-part12-main > div > img{
   width: 100%;
   height: 300px;
   object-fit: cover;
   filter: grayscale(100%);
+  transition: height 0.3s ease-in-out,filter 0.3s ease-in-out;
 }
 
-.content-part12-main > div:nth-child(2) > img {
+.content-part12-main > div:nth-child(2) > img{
   height: 220px;
+
 }
 
-.content-part12-main > div:nth-child(4) > img {
+.content-part12-main > div:nth-child(4) > img{
   height: 360px;
 }
-.content-part12-main > div:nth-child(5) > img {
+.content-part12-main > div:nth-child(5) > img{
   filter: none;
 }
 
-.content-part12-main > div:nth-child(6) > img {
+.content-part12-main > div:nth-child(6) > img{
   height: 280px;
+}
+
+/* 交互处理 */
+
+.content-part12-main > div:nth-child(1) > img:hover{
+  height: 350px;
+  filter: none;
+}
+
+.content-part12-main > div:nth-child(2) > img:hover{
+  height: 330px;
+  filter: none;
+}
+
+.content-part12-main > div:nth-child(3) > img:hover{
+  height: 330px;
+  filter: none;
+}
+.content-part12-main > div:nth-child(4) > img:hover{
+  height: 320px;
+  filter: none;
+}
+.content-part12-main > div:nth-child(5) > img:hover{
+  height: 260px;
+
+}
+
+.content-part12-main > div:nth-child(6) > img:hover{
+  height: 220px;
+
 }

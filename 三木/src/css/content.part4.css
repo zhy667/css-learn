@@ -180,3 +180,7 @@ img.right-card {
 .part4-container-bottom-logos.right-card > div:nth-child(3) {
   background-image: url("../imgs/part4/person/person3.png");
 }
+.part4-main-container-card:hover .container-card-bottom-text{
+background-color: black;
+color: white;
+}

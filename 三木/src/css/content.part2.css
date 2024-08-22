@@ -44,6 +44,7 @@
 .content-part2-bottom > div:first-child > img {
   width: 140%;
   order: 1;
+  transition: with 0.3s ease-in-out;
 }
 .content-part2-bottom > div:first-child > span:first-of-type {
   /* padding: 20px; */
@@ -118,4 +119,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+}
+.content-part2-bottom:hover > div:first-child > img{
+  width: 180%;
 }

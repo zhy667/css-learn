@@ -1,63 +1,79 @@
-.content-part10 {
+.content-part10{
   width: 100%;
-  height: 1000px;
+  height: auto;
   /* border: 2px solid red; */
   padding-block: var(--main-block-padding);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: rgb(251, 251, 253);
+  background-color: rgb(246, 246, 246);
 }
-.content-part10 > div {
+
+.content-part10 > div{
   /* border: 2px solid blue; */
+
 }
+
 .content-part10-top {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+
 }
-.content-part10-top > span:first-child(1) {
+
+.content-part10-top > span:first-child{
   font-size: 1.1rem;
 }
-.content-part10-top > span:nth-child(2) {
+.content-part10-top > span:nth-child(2){
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
-.coupon-box {
+
+.coupon-box{
   display: flex;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
-.coupon-box > input {
+
+.coupon-box>input{
   width: 400px;
   height: 46px;
+  border: none;
   outline: none;
   padding-left: 0.8rem;
+  
+}
+.coupon-box>input::placeholder{
+  color: black;
+  /* text-indent: 0.5rem; */
+  font-size: 0.6rem;
 }
 
-.coupon-box > input::placeholder {
-  color: black;
-  text-indent: 0.5rem;
-}
-.coupon-box > button {
+.coupon-box > button{
   background-color: black;
   color: white;
   padding: 0 20px;
   font-size: 0.6rem;
 }
 
-.content-part10-bottom {
+.content-part10-bottom{
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.content-part10-bottom-titles {
+
+
+
+
+
+.content-part10-bottom-titles{
   display: flex;
   align-items: center;
 }
+
 .toggle-price-box {
   display: flex;
   align-items: center;
@@ -67,61 +83,57 @@
 #toggle-price {
   display: none;
 }
-.toggle-price-box > label {
-  width: 75px;
+
+.toggle-price-box > label{
+  width: 68px;
   height: 36px;
-  background-color: rgb(235, 231, 231);
-  border-radius: 40px;
+  background-color: #ffffff;
+  border-radius: 100px;
   display: flex;
   align-items: center;
   padding: 0 6px;
   flex-shrink: 0;
+  cursor: pointer;
+  border: 1px solid rgb(219, 219, 219);
 }
-.toggle-price-box > label::after {
-  content: "";
+.toggle-price-box > label::after{
+
+  content: '';
   display: block;
   width: 24px;
   height: 24px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
+
 }
-#toggle-price:checked + .content-part10-bottom-titles label::after {
-  transform: translateX(36px);
+
+#toggle-price:checked + .content-part10-bottom-titles label::after{
+  transform: translateX(32px);
 }
-.toggle-price-box > span:last-child {
-  font-size: 0.6rem;
+
+.toggle-price-box>span:last-child{
   text-wrap: nowrap;
-  border-radius: 4px;
-  background: linear-gradient(red, orange, yellow, green, blue);
-}
-.part10-card-price-info-second > span:last-child {
   font-size: 0.6rem;
-  text-wrap: nowrap;
+  padding: 4px 6px;
   border-radius: 4px;
-  background: linear-gradient(
-    rgb(196, 132, 216),
-    rgb(219, 198, 216),
-    rgb(109, 109, 206)
-  );
+  background: linear-gradient(90deg, rgba(244, 170, 170, 0.6) 0%, rgba(100, 205, 240, 0.3) 100%);
 }
-.part10-card-price-info-third > span:last-child {
-  color: rgba(255, 255, 255, 0.784);
-  font-size: 0.6rem;
-  text-wrap: nowrap;
-  border-radius: 4px;
-  background: black;
-}
-.content-part10-bottom-cards {
+
+/* 底下价格卡片 */
+.content-part10-bottom-cards{
   display: flex;
   gap: 20px;
 }
-.content-part10-bottom-cards > div {
+
+.content-part10-bottom-cards > div{
   /* border: 2px solid red; */
+
   width: 100%;
   height: auto;
 }
-.part10-card {
+
+.part10-card{
   display: flex;
   padding: 40px;
   flex-direction: column;
@@ -129,50 +141,54 @@
   gap: 30px;
   background-color: white;
   border-radius: 10px;
+  transition:  all 0.3s ease-in-out;
+  cursor: pointer;
 }
-.part10-card-second {
-  display: flex;
-  padding: 40px;
-  flex-direction: column;
-  background-color: rgb(0, 0, 0);
-  gap: 30px;
-  border-radius: 10px;
-  color: rgba(255, 255, 255, 0.51);
-}
-.part10-card-tittle-second {
-  color: white;
-  font-size: 1.5rem;
+.part10-card-title{
+  white-space: pre-line;
+  font-size: 1.6rem;
   font-weight: 600;
 }
-.part10-card-price-title-second > span:first-child {
-  color: white;
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-.part10-card-tittle {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.part10-card-price {
+
+.part10-card-price{
   display: flex;
   flex-direction: column;
 }
-
-.part10-card-price-title > span:first-child {
-  font-size: 3rem;
-  font-weight: 800;
+.part10-card-price-title > span:first-child{
+  font-size: 3.2rem;
+  font-weight: 600;
   letter-spacing: 1px;
+  position: relative;
 }
-
-.part10-card-price-info {
+.part10-card-price-info{
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.part10-card-button {
+.part10-card-price-info > .save-tag{
+  font-size: 0.6rem;
+  background-color: black;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.part10-card-price-title .dollar{
+  font-size: 0.9rem;
+  /* vertical-align: 30px; */
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+
+
+
+.part10-card-button{
   width: 100%;
   height: 60px;
-  border: 1px solid rgb(244, 237, 237);
+  border: 1px solid rgb(173, 173, 173);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,43 +197,58 @@
   font-weight: 700;
   margin-top: 20px;
 }
-.part10-card-button-second {
-  width: 100%;
-  height: 60px;
-  border: 1px solid rgb(238, 231, 231);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-top: 20px;
-}
-.part10-card-list {
+.part10-card-list{
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.part10-card-list-item {
+
+.part10-card-list-item{
   display: flex;
   gap: 20px;
   font-size: 0.8rem;
   align-items: center;
-  font-weight: 600;
 }
-.part10-card-list-item > div:first-child {
+
+.part10-card-list-item > div:first-child{
   height: 20px;
   width: 20px;
   padding: 2px;
-  border: 1px solid rgb(235, 231, 231);
+  border: 1px solid rgb(191, 191, 191);
   border-radius: 50%;
 }
-.year-price {
+
+/* hover卡片的效果 */
+
+.part10-card:hover{
+  background-color: black;
+  color: white;
+  transform: translateY(-10px);
+}
+.part10-card:hover .save-tag{
+  color: black;
+  background: linear-gradient(90deg, rgba(244, 170, 170, 1) 0%, rgb(113, 219, 255) 100%);
+}
+
+/* 实现按钮切换价格 */
+.year-price{
   display: none;
 }
-#toggle-price:checked ~ .content-part10-bottom-cards .monthly-price {
+.year-total-price{
   display: none;
 }
-#toggle-price:checked ~ .content-part10-bottom-cards .year-price {
+
+#toggle-price:checked ~ .content-part10-bottom-cards .monthly-price{
+  display: none;
+}
+#toggle-price:checked ~ .content-part10-bottom-cards .year-price{
+  display: inline-block;
+}
+
+
+#toggle-price:checked ~ .content-part10-bottom-cards .monthly-total-price{
+  display: none;
+}
+#toggle-price:checked ~ .content-part10-bottom-cards .year-total-price{
   display: inline-block;
 }

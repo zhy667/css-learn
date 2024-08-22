@@ -1,4 +1,4 @@
-.content-part6 {
+.content-part6{
   height: auto;
   width: 100%;
   /* border: 2px solid red; */
@@ -9,7 +9,7 @@
   gap: 80px;
 }
 
-.part6-main-content {
+.part6-main-content{
   /* border: 2px solid green; */
   flex-grow: 1;
   display: flex;
@@ -17,14 +17,14 @@
   gap: 30px;
 }
 
-.part6-main-content-cards {
+.part6-main-content-cards{
   flex-grow: 1;
   /* border: 2px solid red; */
   display: flex;
   gap: 20px;
 }
 
-.part6-main-content-card-one {
+.part6-main-content-card-one{
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
@@ -32,32 +32,34 @@
   width: 100%;
   background-color: white;
   border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.part6-main-content-card-one > div:first-child {
+.part6-main-content-card-one > div:first-child{
   width: 100%;
   height: 200px;
-  background-image: url("../imgs/part6/1.jpg");
+  background-image: url('../imgs/part6/1.jpg');
   background-size: cover;
   border-radius: 10px;
 }
 
-.part6-main-content-card-one > div.card2:first-child {
+.part6-main-content-card-one > div.card2:first-child{
   width: 100%;
   height: 200px;
-  background-image: url("../imgs/part6/2.jpg");
+  background-image: url('../imgs/part6/2.jpg');
   background-size: cover;
   border-radius: 10px;
 }
-.part6-main-content-card-one > div.card3:first-child {
+.part6-main-content-card-one > div.card3:first-child{
   width: 100%;
   height: 200px;
-  background-image: url("../imgs/part6/3.jpg");
+  background-image: url('../imgs/part6/3.jpg');
   background-size: cover;
   border-radius: 10px;
 }
 
-.part6-main-content-card-one > .texts-container {
+
+.part6-main-content-card-one > .texts-container{
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -65,28 +67,28 @@
   /* height: 100%; */
 }
 
-.texts-container > div {
+.texts-container > div{
   /* height: 100%; */
   /* flex-grow: 1; */
   /* border: 2px solid red; */
 }
 
-.texts-container-item1 {
+.texts-container-item1{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.texts-container-item1 > span:first-child {
+.texts-container-item1 > span:first-child{
   font-size: 0.8rem;
   color: rgb(136, 136, 136);
 }
-.texts-container-item1 > span:last-child {
+.texts-container-item1 > span:last-child{
   font-size: 1.4rem;
   font-weight: 700;
   white-space: pre-line;
 }
 
-.texts-container-item2 {
+.texts-container-item2{
   border-top: 1px solid rgb(185, 185, 185);
   border-bottom: 1px solid rgb(185, 185, 185);
   display: flex;
@@ -95,34 +97,36 @@
   gap: 10px;
 }
 
-.texts-container-item2 > span:first-child {
+.texts-container-item2 > span:first-child{
   font-size: 1.6rem;
   font-weight: 700;
 }
-.texts-container-item2 > span:last-child {
+.texts-container-item2 > span:last-child{
   font-size: 0.6rem;
   text-transform: capitalize;
   color: rgb(136, 136, 136);
 }
 
-.texts-container-item3 {
+
+.texts-container-item3{
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* border: 2px solid red; */
+
 }
 
-.texts-container-item3 > div:first-child {
+.texts-container-item3 > div:first-child{
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.texts-container-item3 > div:first-child > div {
+.texts-container-item3 > div:first-child > div{
   display: flex;
 }
 
-.texts-container-item3 > div:first-child > div > div {
+.texts-container-item3 > div:first-child > div > div{
   width: 40px;
   height: 40px;
   /* background-color: aqua; */
@@ -131,46 +135,53 @@
   background-size: cover;
   filter: grayscale(100%);
 }
-.texts-container-item3 > div:first-child > div > div:nth-child(1) {
-  background-image: url("../imgs/part6/1.jpg");
+.texts-container-item3 > div:first-child > div > div:nth-child(1){
+  background-image: url('../imgs/part6/avatars/person1.jpg');
 }
 
-.texts-container-item3 > div:first-child > div > div:nth-child(2) {
-  background-image: url("../imgs/part6/2.jpg");
+.texts-container-item3 > div:first-child > div > div:nth-child(2){
+  background-image: url('../imgs/part6/avatars/person2.png');
   margin-left: -15px;
 }
-.texts-container-item3 > div:first-child > div > div:nth-child(3) {
-  background-image: url("../imgs/part6/3.jpg");
+.texts-container-item3 > div:first-child > div > div:nth-child(3){
+  background-image: url('../imgs/part6/avatars/person3.png');
   margin-left: -20px;
 }
-.texts-container-item3 > div:first-child > span {
+.texts-container-item3 > div:first-child >span{
   font-weight: 700;
 }
 
-.texts-container-item3 > :last-child {
+.texts-container-item3 > :last-child{
   font-size: 1.6rem;
 }
 
 /* 最底下的两个按钮 */
-.part6-main-content > div:last-child {
+.part6-main-content > div:last-child{
   /* border: 2px solid red; */
   display: flex;
   align-self: flex-end;
   gap: 10px;
 }
 
-.part6-main-content > div:last-child > div {
+.part6-main-content > div:last-child > div{
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius:50%;
   border: 2px solid rgb(70, 70, 70);
   font-size: 1.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-.part6-main-content > div:last-child > div:first-child {
+.part6-main-content > div:last-child > div:first-child{
   transform: scaleX(-1);
   opacity: 0.2;
+}
+
+
+/* 交互 */
+.part6-main-content-card-one:hover{
+  transform: translateY(-10px);
 }

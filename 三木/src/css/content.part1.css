@@ -85,8 +85,10 @@
   font-size: 2rem;
   color: white;
   letter-spacing: 1px;
+  transition: gap 0.3s ease;
+  cursor: pointer;
 }
-/* 按钮变长 */
+
 .content-part1-left-other > div:first-child:hover{
   gap: 120px;
 }
